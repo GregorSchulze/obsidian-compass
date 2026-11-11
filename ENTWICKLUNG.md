@@ -44,9 +44,17 @@ npm run deploy
 
 ## Veröffentlichen
 
-1. Version erhöhen, `versions.json` ergänzen, committen und pushen.
-2. GitHub-Release mit dem Tag der Version, z. B. `2.8.0`, ohne „v“. Anhänge: `dist/main.js` als `main.js`, `manifest.json`, `styles.css`.
+Repo: https://github.com/GregorSchulze/obsidian-compass
+
+1. Version erhöhen (`npm run version:minor`), `versions.json` ergänzen, `npm test`, committen und pushen.
+2. GitHub-Release mit dem Tag der Version, ohne „v“, und den drei Plugin-Dateien:
+
+```bash
+npm run build && gh release create 2.10.0 dist/main.js manifest.json styles.css --title 2.10.0 --notes "…"
+```
+
 3. Beim ersten Mal: auf community.obsidian.md mit dem Obsidian-Konto anmelden, GitHub verknüpfen, unter „Set up and claim“ das Plugin hinzufügen. Die Prüfung läuft automatisch.
+4. BRAT-Nutzer bekommen jedes neue Release von selbst.
 
 Vorher Obsidians Prüfer laufen lassen (`eslint-plugin-obsidianmd`, Empfehlungs-Konfiguration). Sicherheitsregeln dürfen keine Fehler melden.
 
