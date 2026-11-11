@@ -1,0 +1,10 @@
+{
+  "id": "quote-card",
+  "name": "Compass",
+  "version": "2.10.0",
+  "minAppVersion": "1.9.0",
+  "description": "Quote cards, a quote of the day, coloured note headers, a home dashboard, image layout and sharing as images, plus a guided setup for new vaults.",
+  "author": "Gregor Schulze",
+  "authorUrl": "https://github.com/GregorSchulze",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,19 @@
+{
+  "name": "obsidian-quotes-notes",
+  "version": "2.10.0",
+  "private": true,
+  "description": "Quote cards, a quote of the day, coloured note headers, a home dashboard, image layout and sharing as images, plus a guided setup for new vaults.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node --test \"test/*.test.mjs\"",
+    "deploy": "node scripts/deploy.mjs",
+    "version:patch": "node scripts/version.mjs patch",
+    "version:minor": "node scripts/version.mjs minor"
+  },
+  "license": "MIT",
+  "author": "Gregor Schulze",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GregorSchulze/obsidian-compass"
+  }
+}
